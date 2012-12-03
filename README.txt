@@ -5,5 +5,5 @@ Authors:                   @benjbubu
 Programming language:      Bash 
 License:                    GNU GPLv3+
 
-Installation: Nothing. Just run the .sh in root user (because editing the files of denyhosts requires this right, except for exotic configurations :) ) 
+Installation: Nothing. (maybe a chmod +x unbannator.sh) Just run the .sh in root user (because editing the files of denyhosts requires this right, except for exotic configurations :) ) 
 
