@@ -3,6 +3,7 @@
 #This program helps you to remove host or ip if you get banned accidentally on your 
 #computer when using denyhosts
 #
+#Licence : GNU GPLv3+
 #
 #Ce programme vous permet d'enlever une IP ou un hote dans denyhosts.
 #Pratique en cas d'auto-ban...
@@ -38,7 +39,7 @@ IP=$1
 echo "The IP to be removed is" $IP
 sleep 1
 
-#Deleting the IP from the files of denyhosts / Suppression de l'IP des fichiers utilisÃs par denyhosts
+#Deleting the IP from the files of denyhosts / Suppression de l'IP des fichiers utilisï¿½s par denyhosts
 
 sed -i "/$1/d" /var/lib/denyhosts/hosts
 sed -i "/$1/d" /var/lib/denyhosts/hosts-restricted
