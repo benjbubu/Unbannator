@@ -29,6 +29,23 @@ then echo "Incorrect Syntax : ./unbannator.sh XX.YY.ZZ.WW";
 exit;
 fi
 
+#Checking valid IP / Verification IP valide
+nb=1
+for i in ${1//./ }
+  do
+      if let $i 2>/dev/null; then
+
+            if [ $i -gt 255 -o $nb -gt 4 ]; then
+                     echo "The IP address is invalid. Please correct"
+                     exit 0
+            fi
+      else
+            echo "The IP addres is invalid. Mistake?"
+            exit 0
+      fi
+            let nb+=1
+   done
+
 #Stopping Denyhosts
 echo "Stopping Denyhosts for my duty..."
 sleep 1
